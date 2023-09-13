@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./calc.css" />
+    <link rel="stylesheet" href="./scroll.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <h1 class="m-5">
+      <i class="fa-solid fa-calculator fa-3x"></i>
+      <br />
+      <br />
+      CALCULATOR
+    </h1>
+    <form action="" class="container rounded p-3">
+      <div
+        class="row row-cols-5 gap-3 d-flex justify-content-center align-items-center"
+      >
+        <div class="col-10">
+          <input
+            type="text"
+            id="calcscreen"
+            class="calcscreen w-100"
+            placeholder="0"
+          />
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="percent()"
+          >
+            %
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="allClear()"
+          >
+            AC
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="backspace()"
+          >
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="displayData('/')"
+          >
+            ÷
+          </button>
+        </div>
+
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(7)"
+          >
+            7
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(8)"
+          >
+            8
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(9)"
+          >
+            9
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="displayData('*')"
+          >
+            ×
+          </button>
+        </div>
+
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(4)"
+          >
+            4
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(5)"
+          >
+            5
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(6)"
+          >
+            6
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="displayData('-')"
+          >
+            -
+          </button>
+        </div>
+
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(1)"
+          >
+            1
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(2)"
+          >
+            2
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(3)"
+          >
+            3
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 func"
+            onclick="displayData('+')"
+          >
+            +
+          </button>
+        </div>
+
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData('00')"
+          >
+            00
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData(0)"
+          >
+            0
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 num"
+            onclick="displayData('.')"
+          >
+            .
+          </button>
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn h-100 w-100 eqto"
+            onclick="equalTo()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div class="author mt-5">
+      <h4>Made by</h4>
+      <h3>
+        ANOOF <br />
+        ABDUL <br />
+        KADAR
+      </h3>
+    </div>
+    <script src="./calc.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/* *{
+    outline: green solid;
+} */
+
+body{
+    background-color: #030504;
+    color: #D6D5C9;
+    font-family: cascadia code;
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    color: #B9BAA3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.calcscreen{
+    background-color: #0A100D;
+    color: #B9BAA3;
+    height: 100px;
+    font-size: xxx-large;
+    text-align: right;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+    caret-color: transparent;
+}
+
+.calcscreen:focus{
+    border:transparent;
+    background-color: #0A100D;
+}
+
+::selection{background-color: #B9BAA3; color: #0A100D;}
+
+.num{
+    background-color: #B9BAA3;
+    color: #0A100D;
+    font-weight: 700;
+}
+
+.num:hover{
+    background-color: #959683;
+}
+
+.eqto{
+    background-color: #A22C29;
+    font-weight: 900;
+}
+
+.eqto:hover{
+    background-color: #B9BAA3;
+    color: #030504;
+}
+
+.func{
+    background-color: #0A100D;
+    color: #B9BAA3;
+    font-weight: 900;
+}
+
+.func:hover{
+    background-color: #18261f;
+}
+
+.author{text-align: center;}
+
+.author h4{
+ color: #d04846;
+ font-size: larger;
+}
+
+.author h3{
+    font-size: xx-large;
+}
