@@ -12,8 +12,8 @@
   --l-accent: hsl(18, 83%, 37%);
 
   /* Dark Theme Color Variables */
-  --d-bg-1: hsl(218, 19%, 38%);
-  --d-bg-2: hsl(229, 19%, 22%);
+  --d-bg-1: hsl(217, 19%, 38%);
+  --d-bg-2: hsl(229, 20%, 22%);
   --d-fg-2: hsl(0, 0%, 100%);
   --d-fg-1: hsl(180, 1%, 75%);
   --d-accent: hsl(18, 83%, 63%);
