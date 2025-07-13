@@ -3,6 +3,8 @@
 A basic calculator web application built using vanilla HTML, CSS, and JavaScript.
 [Preview it live here.](https://anu1o.github.io/Calculator/)
 
+![Calculator Cover](./public/images/cover.jpg)
+
 ## ⚙️ Features
 
 - Supports addition, subtraction, multiplication, and division
